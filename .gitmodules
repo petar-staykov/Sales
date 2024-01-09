@@ -1,3 +1,4 @@
 [submodule "Master-Data"]
 	path = Master-Data
 	url = https://github.com/petar-staykov/Master-Data.git
+	branch = main
