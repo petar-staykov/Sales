@@ -1,6 +1,6 @@
-unique_name: Internet Sales
+unique_name: Sales Orders
 object_type: model
-label: Internet Sales
+label: Sales Orders
 dimensions:
   - Color Dimension
   - Size Dimension
@@ -178,8 +178,6 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
-
-  
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
