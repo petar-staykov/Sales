@@ -1,4 +1,4 @@
-[submodule "Master-Data"]
-	path = Master-Data
-	url = https://github.com/petar-staykov/Master-Data.git
+[submodule "Shared-Library"]
+	path = Shared-Library
+	url = https://github.com/petar-staykov/Shared-Library.git
 	branch = main
