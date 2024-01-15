@@ -12,7 +12,7 @@ hierarchies:
 
     levels:
 
-      - unique_name: Size
+      - unique_name: Size Level
 
 level_attributes:
 
