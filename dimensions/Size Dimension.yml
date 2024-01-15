@@ -16,7 +16,7 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: Size
+  - unique_name: Size Level
     label: Size
     dataset: factinternetsales
     name_column: size
