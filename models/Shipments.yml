@@ -1,6 +1,6 @@
-unique_name: Sales Orders
+unique_name: Shipments
 object_type: model
-label: Sales Orders
+label: Shipments
 dimensions:
   - Color Dimension
   - Size Dimension
