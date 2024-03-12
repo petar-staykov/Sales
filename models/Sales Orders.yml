@@ -54,7 +54,6 @@ metrics:
     folder: Time Relative
   - unique_name: Average Sold Product per Order
     folder: Time Relative
-
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
@@ -67,24 +66,6 @@ perspectives:
           - d_firstname
           - d_lastname
 relationships:
-  - unique_name: factinternetsales_Date_Dimension_Order_1
-    from:
-      dataset: factinternetsales
-      join_columns:
-        - orderdatekey
-    role_play: Order {0}
-    to:
-      dimension: Date Dimension
-      level: Reporting_Day
-  - unique_name: factinternetsales_Date_Dimension_Ship_1
-    from:
-      dataset: factinternetsales
-      join_columns:
-        - shipdatekey
-    role_play: Ship {0}
-    to:
-      dimension: Date Dimension
-      level: Reporting_Day
   - unique_name: factinternetsales_Product_Dimension
     from:
       dataset: factinternetsales
@@ -111,4 +92,13 @@ relationships:
     to:
       dimension: Customer Dimension
       level: Customer Name
+  - unique_name: factinternetsales_orderdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
 visible: true
