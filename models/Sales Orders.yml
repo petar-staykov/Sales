@@ -103,13 +103,22 @@ relationships:
     to:
       dimension: Date Dimension
       level: DayMonth
-  - unique_name: factinternetsales_shipdatekey_to_Date Dimension_DayMonth
+  - unique_name: factinternetsales_orderdatekey_to_Date Dimension_Reporting_Day
     from:
       dataset: factinternetsales
       join_columns:
-        - shipdatekey
-    role_play: Ship {0}
+        - orderdatekey
+    role_play: Order {0}
     to:
       dimension: Date Dimension
-      level: DayMonth
+      level: Reporting_Day
+  - unique_name: factinternetsales_orderdatekey_to_Date Dimension_customday
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date Dimension
+      level: customday
 visible: true
