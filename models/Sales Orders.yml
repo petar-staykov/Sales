@@ -101,4 +101,13 @@ relationships:
     to:
       dimension: Date Dimension
       level: DayMonth
+  - unique_name: factinternetsales_shipdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
 visible: true
