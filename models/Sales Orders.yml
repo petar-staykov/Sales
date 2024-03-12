@@ -54,6 +54,8 @@ metrics:
     folder: Time Relative
   - unique_name: Average Sold Product per Order
     folder: Time Relative
+  - unique_name: SalesPrevYear
+  - unique_name: SalesGrowthYOY
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
