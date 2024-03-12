@@ -1,0 +1,8 @@
+unique_name: SalesPrevYear
+object_type: metric_calc
+label: SalesPrevYear
+expression: >-
+  (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
+  Reporting_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember),
+   [Measures].[salesamount1])
+is_hidden: false
