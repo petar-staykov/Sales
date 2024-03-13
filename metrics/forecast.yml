@@ -1,0 +1,6 @@
+unique_name: forecast
+object_type: metric
+label: Forecast
+calculation_method: sum
+column: PREDICTED_SALES
+dataset: SLS_DEMO_TABLE

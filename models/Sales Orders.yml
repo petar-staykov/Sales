@@ -56,6 +56,7 @@ metrics:
     folder: Time Relative
   - unique_name: SalesPrevYear
   - unique_name: SalesGrowthYOY
+  - unique_name: forecast
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
