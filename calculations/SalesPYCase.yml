@@ -1,6 +1,7 @@
 unique_name: SalesPYCase
 object_type: metric_calc
 label: SalesPYCase
+description: Updating Calcs to use new Quarter Level
 expression: >-
   CASE WHEN  [Order Date Dimension].[Order Date Month
   Hierarchy].CurrentMember.Name="Year" THEN 
