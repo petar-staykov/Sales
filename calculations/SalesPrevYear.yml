@@ -1,0 +1,24 @@
+unique_name: SalesPrevYear
+object_type: metric_calc
+label: SalesPrevYear
+expression: >-
+  CASE WHEN  [Order Date Dimension].[Order Date Month
+  Hierarchy].CurrentMember.Name="Year" THEN 
+
+  ([Order Date Dimension].[Order Date Month Hierarchy].CurrentMember.lag(1),
+  [Measures].[salesamount1]) 
+
+  WHEN  [Order Date Dimension].[Order Date Month
+  Hierarchy].CurrentMember.Name="Month" THEN 
+
+  ([Order Date Dimension].[Order Date Month Hierarchy].CurrentMember.lag(12),
+  [Measures].[salesamount1]) 
+
+  WHEN  [Order Date Dimension].[Order Date Month
+  Hierarchy].CurrentMember.Name="Day" THEN 
+
+  ([Order Date Dimension].[Order Date Month Hierarchy].CurrentMember.lag(365),
+  [Measures].[salesamount1]) 
+
+  END
+is_hidden: false

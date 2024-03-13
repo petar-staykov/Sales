@@ -178,6 +178,7 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
+  - unique_name: SalesPrevYear
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
