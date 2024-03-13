@@ -1,0 +1,6 @@
+unique_name: con_QT_AGGREGATES
+object_type: connection
+label: con_QT_AGGREGATES
+as_connection: con1
+database: QT
+schema: AGGREGATES

@@ -1,0 +1,14 @@
+unique_name: SLS_DEMO_TABLE
+object_type: dataset
+label: SLS_DEMO_TABLE
+columns:
+  - data_type: string
+    name: PRODUCT LINE
+  - data_type: string
+    name: ORDER QUARTER
+  - data_type: double
+    name: PREDICTED_SALES
+  - data_type: date
+    name: QUARTER
+connection_id: con_QT_AGGREGATES
+table: SLS_DEMO_TABLE

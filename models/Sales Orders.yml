@@ -121,4 +121,21 @@ relationships:
     to:
       dimension: Date Dimension
       level: customday
+  - unique_name: SLS_DEMO_TABLE_PRODUCT LINE_to_Product Dimension_Product Line
+    from:
+      dataset: SLS_DEMO_TABLE
+      join_columns:
+        - PRODUCT LINE
+    to:
+      dimension: Product Dimension
+      level: Product Line
+  - unique_name: SLS_DEMO_TABLE_QUARTER_to_Date Dimension_Quarter
+    from:
+      dataset: SLS_DEMO_TABLE
+      join_columns:
+        - QUARTER
+    role_play: Order {0}
+    to:
+      dimension: Date Dimension
+      level: Quarter
 visible: true
