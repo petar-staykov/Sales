@@ -4,4 +4,5 @@ label: SalesGrowthYOY
 expression: >-
   ([Measures].[salesamount1] - [Measures].[SalesPrevYear]) /
   [Measures].[SalesPrevYear]
+format: percent
 is_hidden: false
