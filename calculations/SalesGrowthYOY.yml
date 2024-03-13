@@ -1,0 +1,7 @@
+unique_name: SalesGrowthYOY
+object_type: metric_calc
+label: SalesGrowthYOY
+expression: >-
+  ([Measures].[salesamount1] - [Measures].[SalesPrevYear]) /
+  [Measures].[SalesPrevYear]
+is_hidden: false
