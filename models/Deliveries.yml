@@ -17,6 +17,8 @@ drillthroughs:
         name: City
       - dimension: Geography Dimension
         name: Zip Code
+    metrics:
+      - customercount1
 metrics:
   - unique_name: customercount1
     folder: Customer Metrics
