@@ -9,14 +9,14 @@ dimensions:
 drillthroughs:
   - unique_name: Customer Details
     attributes:
-      - dimension: Geography Dimension
-        name: State
-      - dimension: Customer Dimension
-        name: Customer Name
-      - dimension: Geography Dimension
-        name: City
-      - dimension: Geography Dimension
-        name: Zip Code
+      - name: State
+        dimension: Geography Dimension
+      - name: Customer Name
+        dimension: Customer Dimension
+      - name: City
+        dimension: Geography Dimension
+      - name: Zip Code
+        dimension: Geography Dimension
     metrics:
       - customercount1
 metrics:
@@ -58,15 +58,14 @@ metrics:
     folder: Time Relative
   - unique_name: SalesPrevYear
   - unique_name: SalesGrowthYOY
-  - unique_name: forecast
 perspectives:
   - unique_name: Internet Sales - No PII
     dimensions:
-      - hierarchies:
-          - levels:
+      - name: Customer Dimension
+        hierarchies:
+          - name: Customer Hierarchy
+            levels:
               - Customer Name
-            name: Customer Hierarchy
-        name: Customer Dimension
         secondaryattributes:
           - d_firstname
           - d_lastname
@@ -124,21 +123,4 @@ relationships:
     to:
       dimension: Date Dimension
       level: customday
-  - unique_name: SLS_DEMO_TABLE_PRODUCT LINE_to_Product Dimension_Product Line
-    from:
-      dataset: SLS_DEMO_TABLE
-      join_columns:
-        - PRODUCT LINE
-    to:
-      dimension: Product Dimension
-      level: Product Line
-  - unique_name: SLS_DEMO_TABLE_QUARTER_to_Date Dimension_Quarter
-    from:
-      dataset: SLS_DEMO_TABLE
-      join_columns:
-        - QUARTER
-    role_play: Order {0}
-    to:
-      dimension: Date Dimension
-      level: Quarter
 visible: true
