@@ -6,4 +6,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[customercount1]) THEN \nNULL\nELSE (P
   \ Date Dimension].[Order CustomPP445].[Order customyear], 1, [Order Date Dimension].[Order\
   \ CustomPP445].CurrentMember), [Measures].[customercount1]) END"
 folder: Time Relative
-format: General Number
+format: general number

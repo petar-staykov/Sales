@@ -3,6 +3,6 @@ object_type: metric
 label: Order Quantity
 calculation_method: sum
 folder: Sales Metrics
-format: General Number
+format: general number
 dataset: factinternetsales
 column: orderquantity

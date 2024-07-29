@@ -6,4 +6,4 @@ expression: "Avg(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order
   \ ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember)), \n[Measures].[customercountestimate1])\n"
 folder: Time Relative
-format: General Number
+format: general number
