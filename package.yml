@@ -1,6 +1,6 @@
 version: 1
 packages:
-  - name: shared
+  - version: commit:24a67c8e77886490f08a7feb4cf9285e8a2adf35
+    name: shared
     url: https://github.com/petar-staykov/Shared-Library.git
     branch: main
-    version: commit:e60f1df9182ccc718af52fd453d45242501128b6
