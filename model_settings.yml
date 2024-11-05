@@ -1,0 +1,7 @@
+object_type: model_settings
+overrides:
+    Sales Orders:
+        "query.factless.ignoreIncidentalFilter": false
+        "query.factless.useIncidentalFacts": false
+    Deliveries:
+        "query.factless.useIncidentalFacts": true
