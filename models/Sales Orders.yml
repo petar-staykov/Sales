@@ -59,7 +59,7 @@ metrics:
   - unique_name: SalesPrevYear
   - unique_name: SalesGrowthYOY
 perspectives:
-  - unique_name: Internet Sales - No PII
+  - unique_name: Sales Orders - No PII
     dimensions:
       - name: Customer Dimension
         hierarchies:

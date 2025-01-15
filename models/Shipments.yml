@@ -57,7 +57,7 @@ metrics:
   - unique_name: Average Sold Product per Order
     folder: Time Relative
 perspectives:
-  - unique_name: Internet Sales - No PII
+  - unique_name: Shipments - No PII
     dimensions:
       - hierarchies:
           - levels:
